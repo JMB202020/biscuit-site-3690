@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400 600 700 800;
+  font-display: swap;
+  src: url('/3690/fonts/inter-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700 800;
+  font-display: swap;
+  src: url('/3690/fonts/nunito-latin.woff2') format('woff2');
+}
+
+@theme {
+  --color-brand-bg: #FAF5F0;
+  --color-brand-text: #3D2E22;
+  --color-brand-accent: #C4724E;
+  --color-ink: #3D2E22;
+  --color-ink-soft: #8B7355;
+  --color-ink-whisper: #999999;
+  --color-cream: #FAF5F0;
+  --color-cream-dark: #ECECEA;
+  --color-mustard: #C4724E;
+  --color-mustard-deep: #C4724E;
+  --color-border: #E8DDD0;
+  --color-white-warm: #FFFFFF;
+  --color-white: #FFFFFF;
+  --color-success: #C4724E;
+  --color-error: #C4724E;
+
+  --font-display: 'Nunito', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --text-5xl: clamp(2.5rem, 1.75rem + 3vw, 3.5rem);
+  --text-5xl--line-height: 1.05;
+  --text-4xl: clamp(2rem, 1.5rem + 2vw, 2.5rem);
+  --text-4xl--line-height: 1.1;
+  --text-3xl: clamp(1.5rem, 1.25rem + 1vw, 1.875rem);
+  --text-3xl--line-height: 1.15;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg: 0 12px 40px rgba(0,0,0,0.12);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-brand-bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.1;
+  font-weight: 800;
+}
+img { max-width: 100%;  display: block; }
